@@ -6,4 +6,4 @@
 2. Open project in XCode 
 3. Compile project on any simulator running iOS 14.1 or later
 4. Run "pod install" on the terminal
-5. Used MVVM Architecture
+5. Used MVVM Architecture and RxSwift
