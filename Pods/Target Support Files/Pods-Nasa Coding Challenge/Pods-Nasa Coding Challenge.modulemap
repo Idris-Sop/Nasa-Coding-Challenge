@@ -1,0 +1,6 @@
+framework module Pods_Nasa_Coding_Challenge {
+  umbrella header "Pods-Nasa Coding Challenge-umbrella.h"
+
+  export *
+  module * { export * }
+}

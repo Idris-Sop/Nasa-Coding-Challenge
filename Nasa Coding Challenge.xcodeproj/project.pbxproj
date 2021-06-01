@@ -1,0 +1,991 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA386D863540EF3AF026E27C /* Pods_Nasa_Coding_Challenge_Nasa_Coding_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F29E52C3709F7A663716AE8C /* Pods_Nasa_Coding_Challenge_Nasa_Coding_ChallengeUITests.framework */; };
+		AA847618264964EA002B3E6A /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA847617264964EA002B3E6A /* ListViewModel.swift */; };
+		AA8476212649653B002B3E6A /* NasaAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8476202649653B002B3E6A /* NasaAPIRepository.swift */; };
+		AA84762926496576002B3E6A /* NasaAPIRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA84762826496576002B3E6A /* NasaAPIRepositoryImplementation.swift */; };
+		AA84765C26496E19002B3E6A /* NasaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA84765B26496E19002B3E6A /* NasaModel.swift */; };
+		AA84766526498522002B3E6A /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA84766426498522002B3E6A /* ListTableViewCell.swift */; };
+		AA84766A2649887C002B3E6A /* ListViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8476692649887C002B3E6A /* ListViewModelDelegate.swift */; };
+		AA84767F26498E85002B3E6A /* ListScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA84767E26498E85002B3E6A /* ListScreen.storyboard */; };
+		AA89CF842646A03E009E5647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA89CF832646A03E009E5647 /* AppDelegate.swift */; };
+		AA89CF862646A03F009E5647 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA89CF852646A03E009E5647 /* SceneDelegate.swift */; };
+		AA89CF882646A03F009E5647 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA89CF872646A03F009E5647 /* BaseViewController.swift */; };
+		AA89CF8E2646A03F009E5647 /* Nasa_Coding_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA89CF8C2646A03F009E5647 /* Nasa_Coding_Challenge.xcdatamodeld */; };
+		AA89CF902646A049009E5647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA89CF8F2646A049009E5647 /* Assets.xcassets */; };
+		AA89CF932646A049009E5647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA89CF912646A049009E5647 /* LaunchScreen.storyboard */; };
+		AA89CF9E2646A04A009E5647 /* Nasa_Coding_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA89CF9D2646A04A009E5647 /* Nasa_Coding_ChallengeTests.swift */; };
+		AA89CFA92646A04B009E5647 /* Nasa_Coding_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA89CFA82646A04B009E5647 /* Nasa_Coding_ChallengeUITests.swift */; };
+		AA89CFC72646A270009E5647 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA89CFC62646A270009E5647 /* ListViewController.swift */; };
+		AA89CFF72646A28E009E5647 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA89CFF62646A28E009E5647 /* DetailsViewController.swift */; };
+		AA89CFFC2646A2C3009E5647 /* DetailsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA89CFFB2646A2C3009E5647 /* DetailsScreen.storyboard */; };
+		AA89D0072646A47E009E5647 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA89D0062646A47E009E5647 /* Reachability.swift */; };
+		AA89D00E2646A49A009E5647 /* WebServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA89D00C2646A49A009E5647 /* WebServicesManager.swift */; };
+		AA89D00F2646A49A009E5647 /* WebServicesManagerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA89D00D2646A49A009E5647 /* WebServicesManagerInterface.swift */; };
+		AA89D0122646A4AA009E5647 /* Gateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA89D0112646A4AA009E5647 /* Gateway.swift */; };
+		AA89D01A2646A6B1009E5647 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA89D0192646A6B1009E5647 /* UIImage.swift */; };
+		AA89D01F2646A6CE009E5647 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA89D01E2646A6CE009E5647 /* UIImageView.swift */; };
+		D66DB0552658EB2E00429C61 /* AsynchronousProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66DB0542658EB2E00429C61 /* AsynchronousProvider.swift */; };
+		D66DB0572658EB4600429C61 /* AsynchronousRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66DB0562658EB4600429C61 /* AsynchronousRunner.swift */; };
+		D66DB0592658EB5C00429C61 /* AsynchronousRunnerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66DB0582658EB5C00429C61 /* AsynchronousRunnerImplementation.swift */; };
+		D66DB05B2658EB6F00429C61 /* DummyAsynchronousRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66DB05A2658EB6F00429C61 /* DummyAsynchronousRunner.swift */; };
+		D66DB0602658EC7800429C61 /* LoadingIndicator.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66DB05E2658EC7800429C61 /* LoadingIndicator.xib */; };
+		D66DB0612658EC7800429C61 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66DB05F2658EC7800429C61 /* LoadingIndicator.swift */; };
+		D68AB1C72666891900FA394F /* TestExpectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68AB1C62666891900FA394F /* TestExpectable.swift */; };
+		D68AB1C92666899B00FA394F /* MockNasaAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68AB1C82666899B00FA394F /* MockNasaAPIRepository.swift */; };
+		EF16358A3CBC273CEA0785EA /* Pods_Nasa_Coding_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC17DCE6C6369EB7B6BF61F /* Pods_Nasa_Coding_Challenge.framework */; };
+		F8E35639FA9EC40432AEA250 /* Pods_Nasa_Coding_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 903A3EB0F96F783D064900F5 /* Pods_Nasa_Coding_ChallengeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA89CF9A2646A04A009E5647 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA89CF782646A03E009E5647 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA89CF7F2646A03E009E5647;
+			remoteInfo = "Nasa Coding Challenge";
+		};
+		AA89CFA52646A04A009E5647 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA89CF782646A03E009E5647 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA89CF7F2646A03E009E5647;
+			remoteInfo = "Nasa Coding Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		101610ED55F9FE842284CC3F /* Pods-Nasa Coding ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa Coding ChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-Nasa Coding ChallengeTests/Pods-Nasa Coding ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3FC17DCE6C6369EB7B6BF61F /* Pods_Nasa_Coding_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nasa_Coding_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		582CC69E64CCA2616C5E3518 /* Pods-Nasa Coding Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa Coding Challenge.debug.xcconfig"; path = "Target Support Files/Pods-Nasa Coding Challenge/Pods-Nasa Coding Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		5A6863FDB95A12AAEC9313A0 /* Pods-Nasa Coding Challenge-Nasa Coding ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa Coding Challenge-Nasa Coding ChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-Nasa Coding Challenge-Nasa Coding ChallengeUITests/Pods-Nasa Coding Challenge-Nasa Coding ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		903A3EB0F96F783D064900F5 /* Pods_Nasa_Coding_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nasa_Coding_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A035AB3CE494F79F66472A95 /* Pods-Nasa Coding ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa Coding ChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-Nasa Coding ChallengeTests/Pods-Nasa Coding ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		AA847617264964EA002B3E6A /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		AA8476202649653B002B3E6A /* NasaAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAPIRepository.swift; sourceTree = "<group>"; };
+		AA84762826496576002B3E6A /* NasaAPIRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAPIRepositoryImplementation.swift; sourceTree = "<group>"; };
+		AA84765B26496E19002B3E6A /* NasaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaModel.swift; sourceTree = "<group>"; };
+		AA84766426498522002B3E6A /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		AA8476692649887C002B3E6A /* ListViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelDelegate.swift; sourceTree = "<group>"; };
+		AA84767E26498E85002B3E6A /* ListScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListScreen.storyboard; sourceTree = "<group>"; };
+		AA89CF802646A03E009E5647 /* Nasa Coding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa Coding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA89CF832646A03E009E5647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA89CF852646A03E009E5647 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AA89CF872646A03F009E5647 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AA89CF8D2646A03F009E5647 /* Nasa_Coding_Challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nasa_Coding_Challenge.xcdatamodel; sourceTree = "<group>"; };
+		AA89CF8F2646A049009E5647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA89CF922646A049009E5647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA89CF942646A049009E5647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA89CF992646A04A009E5647 /* Nasa Coding ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nasa Coding ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA89CF9D2646A04A009E5647 /* Nasa_Coding_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nasa_Coding_ChallengeTests.swift; sourceTree = "<group>"; };
+		AA89CF9F2646A04A009E5647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA89CFA42646A04A009E5647 /* Nasa Coding ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nasa Coding ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA89CFA82646A04B009E5647 /* Nasa_Coding_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nasa_Coding_ChallengeUITests.swift; sourceTree = "<group>"; };
+		AA89CFAA2646A04B009E5647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA89CFC62646A270009E5647 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		AA89CFF62646A28E009E5647 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		AA89CFFB2646A2C3009E5647 /* DetailsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsScreen.storyboard; sourceTree = "<group>"; };
+		AA89D0062646A47E009E5647 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		AA89D00C2646A49A009E5647 /* WebServicesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesManager.swift; sourceTree = "<group>"; };
+		AA89D00D2646A49A009E5647 /* WebServicesManagerInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesManagerInterface.swift; sourceTree = "<group>"; };
+		AA89D0112646A4AA009E5647 /* Gateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gateway.swift; sourceTree = "<group>"; };
+		AA89D0192646A6B1009E5647 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		AA89D01E2646A6CE009E5647 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		D66DB0542658EB2E00429C61 /* AsynchronousProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousProvider.swift; sourceTree = "<group>"; };
+		D66DB0562658EB4600429C61 /* AsynchronousRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousRunner.swift; sourceTree = "<group>"; };
+		D66DB0582658EB5C00429C61 /* AsynchronousRunnerImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousRunnerImplementation.swift; sourceTree = "<group>"; };
+		D66DB05A2658EB6F00429C61 /* DummyAsynchronousRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyAsynchronousRunner.swift; sourceTree = "<group>"; };
+		D66DB05E2658EC7800429C61 /* LoadingIndicator.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingIndicator.xib; sourceTree = "<group>"; };
+		D66DB05F2658EC7800429C61 /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		D68AB1C62666891900FA394F /* TestExpectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExpectable.swift; sourceTree = "<group>"; };
+		D68AB1C82666899B00FA394F /* MockNasaAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNasaAPIRepository.swift; sourceTree = "<group>"; };
+		DBD52CC9D09952A7DAA25B79 /* Pods-Nasa Coding Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa Coding Challenge.release.xcconfig"; path = "Target Support Files/Pods-Nasa Coding Challenge/Pods-Nasa Coding Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		F29E52C3709F7A663716AE8C /* Pods_Nasa_Coding_Challenge_Nasa_Coding_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nasa_Coding_Challenge_Nasa_Coding_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F655796C5EF59201E28B4792 /* Pods-Nasa Coding Challenge-Nasa Coding ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nasa Coding Challenge-Nasa Coding ChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Nasa Coding Challenge-Nasa Coding ChallengeUITests/Pods-Nasa Coding Challenge-Nasa Coding ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA89CF7D2646A03E009E5647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF16358A3CBC273CEA0785EA /* Pods_Nasa_Coding_Challenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA89CF962646A04A009E5647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E35639FA9EC40432AEA250 /* Pods_Nasa_Coding_ChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA89CFA12646A04A009E5647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA386D863540EF3AF026E27C /* Pods_Nasa_Coding_Challenge_Nasa_Coding_ChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3553285C41393DB305674B3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				582CC69E64CCA2616C5E3518 /* Pods-Nasa Coding Challenge.debug.xcconfig */,
+				DBD52CC9D09952A7DAA25B79 /* Pods-Nasa Coding Challenge.release.xcconfig */,
+				F655796C5EF59201E28B4792 /* Pods-Nasa Coding Challenge-Nasa Coding ChallengeUITests.debug.xcconfig */,
+				5A6863FDB95A12AAEC9313A0 /* Pods-Nasa Coding Challenge-Nasa Coding ChallengeUITests.release.xcconfig */,
+				101610ED55F9FE842284CC3F /* Pods-Nasa Coding ChallengeTests.debug.xcconfig */,
+				A035AB3CE494F79F66472A95 /* Pods-Nasa Coding ChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		953E954503B7D8472A72358C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FC17DCE6C6369EB7B6BF61F /* Pods_Nasa_Coding_Challenge.framework */,
+				F29E52C3709F7A663716AE8C /* Pods_Nasa_Coding_Challenge_Nasa_Coding_ChallengeUITests.framework */,
+				903A3EB0F96F783D064900F5 /* Pods_Nasa_Coding_ChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA847616264964CA002B3E6A /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA847617264964EA002B3E6A /* ListViewModel.swift */,
+				AA8476692649887C002B3E6A /* ListViewModelDelegate.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		AA84761F264964F1002B3E6A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				AA84765A26496E03002B3E6A /* Model */,
+				AA8476202649653B002B3E6A /* NasaAPIRepository.swift */,
+				AA84762826496576002B3E6A /* NasaAPIRepositoryImplementation.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		AA84765A26496E03002B3E6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA84765B26496E19002B3E6A /* NasaModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA847663264984FA002B3E6A /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AA84766426498522002B3E6A /* ListTableViewCell.swift */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		AA89CF772646A03E009E5647 = {
+			isa = PBXGroup;
+			children = (
+				AA89CF822646A03E009E5647 /* Nasa Coding Challenge */,
+				AA89CF9C2646A04A009E5647 /* Nasa Coding ChallengeTests */,
+				AA89CFA72646A04B009E5647 /* Nasa Coding ChallengeUITests */,
+				AA89CF812646A03E009E5647 /* Products */,
+				3553285C41393DB305674B3D /* Pods */,
+				953E954503B7D8472A72358C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AA89CF812646A03E009E5647 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA89CF802646A03E009E5647 /* Nasa Coding Challenge.app */,
+				AA89CF992646A04A009E5647 /* Nasa Coding ChallengeTests.xctest */,
+				AA89CFA42646A04A009E5647 /* Nasa Coding ChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA89CF822646A03E009E5647 /* Nasa Coding Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				D66DB0532658EB1700429C61 /* Reusable */,
+				AA89D0052646A458009E5647 /* WebServiceKit */,
+				D66DB05C2658EC2500429C61 /* Base View Controller */,
+				AA84761F264964F1002B3E6A /* Repository */,
+				AA89D0162646A638009E5647 /* Extensions */,
+				AA89CFCB2646A276009E5647 /* Details Screen */,
+				AA89CFC22646A240009E5647 /* List View */,
+				AA89CF832646A03E009E5647 /* AppDelegate.swift */,
+				AA89CF852646A03E009E5647 /* SceneDelegate.swift */,
+				AA89CF8F2646A049009E5647 /* Assets.xcassets */,
+				AA89CF912646A049009E5647 /* LaunchScreen.storyboard */,
+				AA89CF942646A049009E5647 /* Info.plist */,
+				AA89CF8C2646A03F009E5647 /* Nasa_Coding_Challenge.xcdatamodeld */,
+			);
+			path = "Nasa Coding Challenge";
+			sourceTree = "<group>";
+		};
+		AA89CF9C2646A04A009E5647 /* Nasa Coding ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				D68AB1C5266688F900FA394F /* Mock */,
+				AA89CF9D2646A04A009E5647 /* Nasa_Coding_ChallengeTests.swift */,
+				AA89CF9F2646A04A009E5647 /* Info.plist */,
+			);
+			path = "Nasa Coding ChallengeTests";
+			sourceTree = "<group>";
+		};
+		AA89CFA72646A04B009E5647 /* Nasa Coding ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA89CFA82646A04B009E5647 /* Nasa_Coding_ChallengeUITests.swift */,
+				AA89CFAA2646A04B009E5647 /* Info.plist */,
+			);
+			path = "Nasa Coding ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		AA89CFC22646A240009E5647 /* List View */ = {
+			isa = PBXGroup;
+			children = (
+				D66DB0622658ECBA00429C61 /* View Controller */,
+				AA847616264964CA002B3E6A /* View Model */,
+			);
+			path = "List View";
+			sourceTree = "<group>";
+		};
+		AA89CFCB2646A276009E5647 /* Details Screen */ = {
+			isa = PBXGroup;
+			children = (
+				AA89CFF62646A28E009E5647 /* DetailsViewController.swift */,
+				AA89CFFB2646A2C3009E5647 /* DetailsScreen.storyboard */,
+			);
+			path = "Details Screen";
+			sourceTree = "<group>";
+		};
+		AA89D0052646A458009E5647 /* WebServiceKit */ = {
+			isa = PBXGroup;
+			children = (
+				AA89D0102646A49E009E5647 /* Gateway */,
+				AA89D00B2646A486009E5647 /* WebServiceManager */,
+				AA89D0062646A47E009E5647 /* Reachability.swift */,
+			);
+			path = WebServiceKit;
+			sourceTree = "<group>";
+		};
+		AA89D00B2646A486009E5647 /* WebServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				AA89D00C2646A49A009E5647 /* WebServicesManager.swift */,
+				AA89D00D2646A49A009E5647 /* WebServicesManagerInterface.swift */,
+			);
+			path = WebServiceManager;
+			sourceTree = "<group>";
+		};
+		AA89D0102646A49E009E5647 /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				AA89D0112646A4AA009E5647 /* Gateway.swift */,
+			);
+			path = Gateway;
+			sourceTree = "<group>";
+		};
+		AA89D0162646A638009E5647 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AA89D0182646A68E009E5647 /* UIImage */,
+				AA89D0172646A643009E5647 /* UIImageView */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AA89D0172646A643009E5647 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				AA89D01E2646A6CE009E5647 /* UIImageView.swift */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		AA89D0182646A68E009E5647 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				AA89D0192646A6B1009E5647 /* UIImage.swift */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		D66DB0532658EB1700429C61 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				D66DB0542658EB2E00429C61 /* AsynchronousProvider.swift */,
+				D66DB0562658EB4600429C61 /* AsynchronousRunner.swift */,
+				D66DB0582658EB5C00429C61 /* AsynchronousRunnerImplementation.swift */,
+				D66DB05A2658EB6F00429C61 /* DummyAsynchronousRunner.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		D66DB05C2658EC2500429C61 /* Base View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D66DB05D2658EC3700429C61 /* Loading Indicator */,
+				AA89CF872646A03F009E5647 /* BaseViewController.swift */,
+			);
+			path = "Base View Controller";
+			sourceTree = "<group>";
+		};
+		D66DB05D2658EC3700429C61 /* Loading Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				D66DB05F2658EC7800429C61 /* LoadingIndicator.swift */,
+				D66DB05E2658EC7800429C61 /* LoadingIndicator.xib */,
+			);
+			path = "Loading Indicator";
+			sourceTree = "<group>";
+		};
+		D66DB0622658ECBA00429C61 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AA847663264984FA002B3E6A /* Custom Cell */,
+				AA89CFC62646A270009E5647 /* ListViewController.swift */,
+				AA84767E26498E85002B3E6A /* ListScreen.storyboard */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		D68AB1C5266688F900FA394F /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				D68AB1C62666891900FA394F /* TestExpectable.swift */,
+				D68AB1C82666899B00FA394F /* MockNasaAPIRepository.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA89CF7F2646A03E009E5647 /* Nasa Coding Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA89CFAD2646A04B009E5647 /* Build configuration list for PBXNativeTarget "Nasa Coding Challenge" */;
+			buildPhases = (
+				CE419C0A10C58D6D83F82729 /* [CP] Check Pods Manifest.lock */,
+				AA89CF7C2646A03E009E5647 /* Sources */,
+				AA89CF7D2646A03E009E5647 /* Frameworks */,
+				AA89CF7E2646A03E009E5647 /* Resources */,
+				73BEB00D9A2F3BCFCA4B4EC1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nasa Coding Challenge";
+			productName = "Nasa Coding Challenge";
+			productReference = AA89CF802646A03E009E5647 /* Nasa Coding Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA89CF982646A04A009E5647 /* Nasa Coding ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA89CFB02646A04B009E5647 /* Build configuration list for PBXNativeTarget "Nasa Coding ChallengeTests" */;
+			buildPhases = (
+				B09DC0961B8E047A23C700D9 /* [CP] Check Pods Manifest.lock */,
+				AA89CF952646A04A009E5647 /* Sources */,
+				AA89CF962646A04A009E5647 /* Frameworks */,
+				AA89CF972646A04A009E5647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA89CF9B2646A04A009E5647 /* PBXTargetDependency */,
+			);
+			name = "Nasa Coding ChallengeTests";
+			productName = "Nasa Coding ChallengeTests";
+			productReference = AA89CF992646A04A009E5647 /* Nasa Coding ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA89CFA32646A04A009E5647 /* Nasa Coding ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA89CFB32646A04B009E5647 /* Build configuration list for PBXNativeTarget "Nasa Coding ChallengeUITests" */;
+			buildPhases = (
+				4D3E54FD8A0CCF4700697EB5 /* [CP] Check Pods Manifest.lock */,
+				AA89CFA02646A04A009E5647 /* Sources */,
+				AA89CFA12646A04A009E5647 /* Frameworks */,
+				AA89CFA22646A04A009E5647 /* Resources */,
+				4BA089D2CEA0CFDF8A98F839 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA89CFA62646A04A009E5647 /* PBXTargetDependency */,
+			);
+			name = "Nasa Coding ChallengeUITests";
+			productName = "Nasa Coding ChallengeUITests";
+			productReference = AA89CFA42646A04A009E5647 /* Nasa Coding ChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA89CF782646A03E009E5647 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					AA89CF7F2646A03E009E5647 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					AA89CF982646A04A009E5647 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = AA89CF7F2646A03E009E5647;
+					};
+					AA89CFA32646A04A009E5647 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = AA89CF7F2646A03E009E5647;
+					};
+				};
+			};
+			buildConfigurationList = AA89CF7B2646A03E009E5647 /* Build configuration list for PBXProject "Nasa Coding Challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA89CF772646A03E009E5647;
+			productRefGroup = AA89CF812646A03E009E5647 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA89CF7F2646A03E009E5647 /* Nasa Coding Challenge */,
+				AA89CF982646A04A009E5647 /* Nasa Coding ChallengeTests */,
+				AA89CFA32646A04A009E5647 /* Nasa Coding ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA89CF7E2646A03E009E5647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA84767F26498E85002B3E6A /* ListScreen.storyboard in Resources */,
+				AA89CF932646A049009E5647 /* LaunchScreen.storyboard in Resources */,
+				AA89CFFC2646A2C3009E5647 /* DetailsScreen.storyboard in Resources */,
+				D66DB0602658EC7800429C61 /* LoadingIndicator.xib in Resources */,
+				AA89CF902646A049009E5647 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA89CF972646A04A009E5647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA89CFA22646A04A009E5647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BA089D2CEA0CFDF8A98F839 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nasa Coding Challenge-Nasa Coding ChallengeUITests/Pods-Nasa Coding Challenge-Nasa Coding ChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nasa Coding Challenge-Nasa Coding ChallengeUITests/Pods-Nasa Coding Challenge-Nasa Coding ChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nasa Coding Challenge-Nasa Coding ChallengeUITests/Pods-Nasa Coding Challenge-Nasa Coding ChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D3E54FD8A0CCF4700697EB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nasa Coding Challenge-Nasa Coding ChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73BEB00D9A2F3BCFCA4B4EC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nasa Coding Challenge/Pods-Nasa Coding Challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nasa Coding Challenge/Pods-Nasa Coding Challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nasa Coding Challenge/Pods-Nasa Coding Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B09DC0961B8E047A23C700D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nasa Coding ChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE419C0A10C58D6D83F82729 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nasa Coding Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA89CF7C2646A03E009E5647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66DB0612658EC7800429C61 /* LoadingIndicator.swift in Sources */,
+				AA89D00E2646A49A009E5647 /* WebServicesManager.swift in Sources */,
+				AA89D01A2646A6B1009E5647 /* UIImage.swift in Sources */,
+				AA89D0072646A47E009E5647 /* Reachability.swift in Sources */,
+				AA89CF882646A03F009E5647 /* BaseViewController.swift in Sources */,
+				AA89D01F2646A6CE009E5647 /* UIImageView.swift in Sources */,
+				D66DB0592658EB5C00429C61 /* AsynchronousRunnerImplementation.swift in Sources */,
+				AA84766526498522002B3E6A /* ListTableViewCell.swift in Sources */,
+				AA89CF842646A03E009E5647 /* AppDelegate.swift in Sources */,
+				AA89D0122646A4AA009E5647 /* Gateway.swift in Sources */,
+				D66DB0552658EB2E00429C61 /* AsynchronousProvider.swift in Sources */,
+				D66DB0572658EB4600429C61 /* AsynchronousRunner.swift in Sources */,
+				AA84762926496576002B3E6A /* NasaAPIRepositoryImplementation.swift in Sources */,
+				AA84766A2649887C002B3E6A /* ListViewModelDelegate.swift in Sources */,
+				AA89CF8E2646A03F009E5647 /* Nasa_Coding_Challenge.xcdatamodeld in Sources */,
+				AA89CFC72646A270009E5647 /* ListViewController.swift in Sources */,
+				AA847618264964EA002B3E6A /* ListViewModel.swift in Sources */,
+				AA89CF862646A03F009E5647 /* SceneDelegate.swift in Sources */,
+				AA8476212649653B002B3E6A /* NasaAPIRepository.swift in Sources */,
+				AA89CFF72646A28E009E5647 /* DetailsViewController.swift in Sources */,
+				AA84765C26496E19002B3E6A /* NasaModel.swift in Sources */,
+				D66DB05B2658EB6F00429C61 /* DummyAsynchronousRunner.swift in Sources */,
+				AA89D00F2646A49A009E5647 /* WebServicesManagerInterface.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA89CF952646A04A009E5647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D68AB1C72666891900FA394F /* TestExpectable.swift in Sources */,
+				AA89CF9E2646A04A009E5647 /* Nasa_Coding_ChallengeTests.swift in Sources */,
+				D68AB1C92666899B00FA394F /* MockNasaAPIRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA89CFA02646A04A009E5647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA89CFA92646A04B009E5647 /* Nasa_Coding_ChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA89CF9B2646A04A009E5647 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA89CF7F2646A03E009E5647 /* Nasa Coding Challenge */;
+			targetProxy = AA89CF9A2646A04A009E5647 /* PBXContainerItemProxy */;
+		};
+		AA89CFA62646A04A009E5647 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA89CF7F2646A03E009E5647 /* Nasa Coding Challenge */;
+			targetProxy = AA89CFA52646A04A009E5647 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA89CF912646A049009E5647 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA89CF922646A049009E5647 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA89CFAB2646A04B009E5647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA89CFAC2646A04B009E5647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA89CFAE2646A04B009E5647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 582CC69E64CCA2616C5E3518 /* Pods-Nasa Coding Challenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A78QS2FFAQ;
+				INFOPLIST_FILE = "Nasa Coding Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ukuspeed.Nasa-Coding-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA89CFAF2646A04B009E5647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD52CC9D09952A7DAA25B79 /* Pods-Nasa Coding Challenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A78QS2FFAQ;
+				INFOPLIST_FILE = "Nasa Coding Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ukuspeed.Nasa-Coding-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA89CFB12646A04B009E5647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 101610ED55F9FE842284CC3F /* Pods-Nasa Coding ChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A78QS2FFAQ;
+				INFOPLIST_FILE = "Nasa Coding ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ukuspeed.Nasa-Coding-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nasa Coding Challenge.app/Nasa Coding Challenge";
+			};
+			name = Debug;
+		};
+		AA89CFB22646A04B009E5647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A035AB3CE494F79F66472A95 /* Pods-Nasa Coding ChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A78QS2FFAQ;
+				INFOPLIST_FILE = "Nasa Coding ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ukuspeed.Nasa-Coding-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nasa Coding Challenge.app/Nasa Coding Challenge";
+			};
+			name = Release;
+		};
+		AA89CFB42646A04B009E5647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F655796C5EF59201E28B4792 /* Pods-Nasa Coding Challenge-Nasa Coding ChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A78QS2FFAQ;
+				INFOPLIST_FILE = "Nasa Coding ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ukuspeed.Nasa-Coding-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Nasa Coding Challenge";
+			};
+			name = Debug;
+		};
+		AA89CFB52646A04B009E5647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A6863FDB95A12AAEC9313A0 /* Pods-Nasa Coding Challenge-Nasa Coding ChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A78QS2FFAQ;
+				INFOPLIST_FILE = "Nasa Coding ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ukuspeed.Nasa-Coding-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Nasa Coding Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA89CF7B2646A03E009E5647 /* Build configuration list for PBXProject "Nasa Coding Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA89CFAB2646A04B009E5647 /* Debug */,
+				AA89CFAC2646A04B009E5647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA89CFAD2646A04B009E5647 /* Build configuration list for PBXNativeTarget "Nasa Coding Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA89CFAE2646A04B009E5647 /* Debug */,
+				AA89CFAF2646A04B009E5647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA89CFB02646A04B009E5647 /* Build configuration list for PBXNativeTarget "Nasa Coding ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA89CFB12646A04B009E5647 /* Debug */,
+				AA89CFB22646A04B009E5647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA89CFB32646A04B009E5647 /* Build configuration list for PBXNativeTarget "Nasa Coding ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA89CFB42646A04B009E5647 /* Debug */,
+				AA89CFB52646A04B009E5647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AA89CF8C2646A03F009E5647 /* Nasa_Coding_Challenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AA89CF8D2646A03F009E5647 /* Nasa_Coding_Challenge.xcdatamodel */,
+			);
+			currentVersion = AA89CF8D2646A03F009E5647 /* Nasa_Coding_Challenge.xcdatamodel */;
+			path = Nasa_Coding_Challenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AA89CF782646A03E009E5647 /* Project object */;
+}
